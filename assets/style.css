@@ -70,54 +70,62 @@ nav a {
 	width: 100%;
 
 }
+
 #about-me {
 	flex: 2
 }
+
 .about-me__title {
 	margin-top: 1em;
 	margin-bottom: 60px;
 	font-size: 30px;
 }
+
 .about-me__introduction {
 	font-family: 'Spectral';
 	font-weight: 800;
+	font-size: 1rem;
 	font-style: italic;
 	width: 60%;
 }
-#about-me p {
+
+#about-me__paragraph {
 	width: 80%;
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
-#gallery {
-	/*	min-height: 100vh; */
-}
-.title{
+.section-title {
 	text-align: center;
 	padding-block: 2em;
 }
+
 .gallery .nav {
 	justify-content: center;
 }
+
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
 	color: #fff;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
+
 .nav-pills .nav-link {
 	color: #000
 }
+
 .item-column {
 	position: relative;
 	margin-bottom: 0 !important;
 	padding: 0;
 }
+
 .item-column::after{
 	content: "";
 	display: block;
 	padding-bottom: 100%;
 
 }
+
 .gallery-item {
 	position: absolute;
 	width: 100%;
@@ -125,6 +133,7 @@ nav a {
 	object-fit: cover;
 	padding: .5em;
 }
+
 .mg-prev, .mg-next {
 	width: 30px;
 	height: 30px;
@@ -136,22 +145,31 @@ nav a {
 }
 
 .quote {
+	/* display: flex;
+	flex-direction: column; */
 	font-family: 'Spectral';
 	font-style: italic;
 	width: 70%;
 	margin: auto;
 	padding-block: 3em;
 }
-.quote__text {
+
+blockquote {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
+	font-size: 2.5rem;
+	line-height: 1.2;
+	/* padding-block: 3em; */
 
 }
-.quote__author {
+
+cite {
+	display: block;
 	font-family: Spectral;
 	font-weight: 800;
 	font-size: 22px;
+	margin-top: 1.5rem;
 }
 
 #services {
@@ -159,6 +177,7 @@ nav a {
 	background-color: #A8D5D8 ;
 	position: relative;
 }
+
 #services .container::before{
 	content: ' ';
 	background-color: #1C6474;
@@ -200,6 +219,7 @@ nav a {
 #contact .container {
 	display: flex;
 }
+
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
@@ -210,10 +230,11 @@ nav a {
 	right: 0;
 	z-index: -1;
 }
+
 .form-container {
 	flex : 2;
-
 }
+
 form {
 	display: flex;
 	flex-direction: column;
@@ -238,6 +259,7 @@ form textarea {
 	font-size: 1.2em;
 	margin-bottom: 20px;
 }
+
 input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
