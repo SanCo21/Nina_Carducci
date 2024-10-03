@@ -81,6 +81,8 @@ body {
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
   text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -374,6 +376,7 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
+  appearance: button;
 }
 button:not(:disabled),
 [type=button]:not(:disabled),
@@ -432,6 +435,7 @@ legend + * {
 [type=search] {
   outline-offset: -2px;
   -webkit-appearance: textfield;
+  appearance: textfield;
 }
 
 /* rtl:raw:
@@ -2481,7 +2485,7 @@ textarea.form-control-lg {
   -moz-appearance: none;
   appearance: none;
   -webkit-print-color-adjust: exact;
-  color-adjust: exact;
+  print-color-adjust: exact;
 }
 .form-check-input[type=checkbox] {
   border-radius: 0.25em;
@@ -6092,6 +6096,7 @@ textarea.form-control-lg {
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: 100% 100%;
+  color: white;
 }
 
 /* rtl:options: {
@@ -6135,6 +6140,7 @@ textarea.form-control-lg {
   text-indent: -999px;
   cursor: pointer;
   background-color: #fff;
+  /* background-color: red; */
   background-clip: padding-box;
   border: 0;
   border-top: 10px solid transparent;
@@ -6149,6 +6155,7 @@ textarea.form-control-lg {
 }
 .carousel-indicators .active {
   opacity: 1;
+  /* background-color: red; */
 }
 
 .carousel-caption {
