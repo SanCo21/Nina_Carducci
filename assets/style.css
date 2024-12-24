@@ -114,6 +114,7 @@ nav a {
 	/* background-color: #BEB45A; */
 	background-color: #5E5926;
 	border-radius:0 ;
+	cursor: pointer;
 }
 
 .nav-pills .nav-link {
